@@ -9,22 +9,65 @@
     <title>Asynchronous JavaScript</title>
   </head>
   <body>
-    <button id="btnPais">Obtener paises</button>
     <main class="container">
-      <div class="countries">
-        <!--
-        <article class="country">
-          <img class="country__img" src="" />
-          <div class="country__data">
-            <h3 class="country__name">COUNTRY</h3>
-            <h4 class="country__region">REGION</h4>
-            <p class="country__row"><span>:man_and_woman_holding_hands:</span>POP people</p>
-            <p class="country__row"><span>:speaking_head_in_silhouette:</span>LANG</p>
-            <p class="country__row"><span>:moneybag:</span>CUR</p>
+      <h2>Obtener paises</h2>
+      <button id="btnPais">Obtener paises</button>
+      <h2>Obtener ciudades con coordenadas</h2>
+      <form action="#">
+        <div>
+          <div>
+            <label for="validationCustom01" class="form-label">City</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom03"
+              required
+            />
           </div>
-        </article>
-        -->
+          <button
+            class="btn btn-primary"
+            id="submitbtn"
+            type="submit"
+            onclick="searchCity()"
+          >
+            Mostrar coordenadas
+          </button>
+        </div>
+      </form>
+      <div>
+        <h2>Obtener ciudad con coordenadas</h2>
+        <form action="#">
+          <div>
+            <label for="validationCustom01" class="form-label">Latitude</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              required
+            />
+          </div>
+          <div>
+            <label for="validationCustom02" class="form-label">Longitude</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              required
+            />
+          </div>
+          <div>
+            <button
+              class="btn btn-primary"
+              id="submitbtn"
+              type="submit"
+              onclick="submited()"
+            >
+              Obtener ciudad
+            </button>
+          </div>
+        </form>
       </div>
+      <div class="countries"></div>
     </main>
     <script defer src="./script.js"></script>
   </body>
