@@ -4,5 +4,8 @@
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-prettier": "^4.0.0",
     "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }
